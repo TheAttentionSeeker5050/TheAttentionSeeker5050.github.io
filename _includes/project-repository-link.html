@@ -1,18 +1,6 @@
-<p>
+<p id="project-repository-link">
     <!-- if includes url display github repository -->
     {% if include.url %}
-        GitHub Repository: <a href="{{include.url}}" target="_blank">Link</a>
+        {{include.label}}: <a href="{{include.url}}" target="_blank">Link</a>
     {% endif %}
-
-    <!-- if includes backendUrl display github backend repository -->
-
-    {% if include.backendUrl %}
-        GitHub Backend Repository: <a href="{{include.backendUrl}}" target="_blank">Link</a>
-    {% endif %}
-
-    <!-- if includes frontendUrl display github backend repository -->
-    {% if include.frontendUrl %}
-        GitHub Frontend Repository: <a href="{{include.frontendUrl}}" target="_blank">Link</a>
-    {% endif %}
-
 </p>
