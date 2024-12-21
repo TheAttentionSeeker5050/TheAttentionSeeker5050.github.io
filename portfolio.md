@@ -6,10 +6,14 @@ permalink: /portfolio/
 
 # Portfolio
 
-<ul id="portfolio-list-items">
-{% for project in site.portfolio %}
-  <li>
-    <a href="{{project.url}}">{{project.title}}</a>
-  </li>
-{% endfor %}
-</ul>
+{% if site.portfolio.size == 0 %}
+  No portfolio entries available.
+{% else %}
+  <ul id="portfolio-list-items">
+    {% for project in site.portfolio %}
+      <li>
+        <a href="{{project.url}}">{{project.title}}</a>
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}

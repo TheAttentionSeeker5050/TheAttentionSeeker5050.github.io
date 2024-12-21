@@ -4,12 +4,16 @@ title: Blog
 permalink: /blog
 ---
 
-<h1>Blog<h1>
+# Blog
 
-<ul>
-      {% for post in site.posts %}
-        <li>
-          <a href="{{ post.url }}">{{ post.title }}</a>
-        </li>
-      {% endfor %}
-</ul>
+{% if site.posts.size == 0 %}
+  No posts available.
+{% else %}
+  <ul>
+    {% for post in site.posts %}
+      <li>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}
