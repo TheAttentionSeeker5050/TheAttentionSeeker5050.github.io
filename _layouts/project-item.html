@@ -8,30 +8,34 @@
   </head>
   <body>
     {% include header.html %}
+    <main>
+      <a href="{{ site.baseurl }}/portfolio" class="back-button">Back</a>
 
-    <a href="{{ site.baseurl }}/portfolio" class="back-button">Back</a>
+      <h1>{{ page.title }}</h1>
 
-    <h1>{{ page.title }}</h1>
+      {% if page.thumbnail %}
+        {% include project-thumbnail.html thumbnail=page.thumbnail %}
+      {% endif %}
+      
+      <div id="project-content-wrapper">
+        {{ content }}
 
-    {% if page.thumbnail %}
-      {% include project-thumbnail.html thumbnail=page.thumbnail %}
-    {% endif %}
-    
-    {{ content }}
+        {% if page.repository %}
+          {% include project-repository-link.html url=page.repository label="GitHub Repository" %}
+        {% endif %}
 
-    {% if page.repository %}
-      {% include project-repository-link.html url=page.repository label="GitHub Repository" %}
-    {% endif %}
+        {% if page.frontendRepository %}
+          {% include project-repository-link.html url=page.frontendRepository label="GitHub Frontend Repository" %}
+        {% endif %}
 
-    {% if page.frontendRepository %}
-      {% include project-repository-link.html url=page.frontendRepository label="GitHub Frontend Repository" %}
-    {% endif %}
+        {% if page.backendRepository %}
+          {% include project-repository-link.html url=page.backendRepository label="GitHub Backend Repository" %}
+        {% endif %}
 
-    {% if page.backendRepository %}
-      {% include project-repository-link.html url=page.backendRepository label="GitHub Backend Repository" %}
-    {% endif %}
+        Dive in to explore my other projects projects, and don’t forget to check out my <a href="https://github.com/TheAttentionSeeker5050/" target="_blank">GitHub</a> account for additional insights into my development journey.
+      </div>
 
-    Dive in to explore my other projects projects, and don’t forget to check out my <a href="https://github.com/TheAttentionSeeker5050/" target="_blank">GitHub</a> account for additional insights into my development journey.
+    </main>
 
     {% include footer.html %}
   </body>

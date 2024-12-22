@@ -1,0 +1,16 @@
+// import colors.scss
+@use 'colors.scss' as *;
+
+@use 'fonts.scss' as *;
+
+@use 'layout.scss' as *;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+}
