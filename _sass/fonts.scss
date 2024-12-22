@@ -6,7 +6,6 @@ body {
 
 header {
     #page-title, nav ul li a {
-        text-decoration: none;
     }
 
     #page-title {
@@ -17,11 +16,19 @@ header {
         ul {
             li {
                 a {
-                    // padding: 6px 12px;
                     font-size: 1.2rem;
                     font-weight: 500;
                 }
             }
         }
     }
+}
+
+#back-button {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
 }

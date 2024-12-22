@@ -6,3 +6,4 @@ collections:
   portfolio:
     permalink: /:collection/:name
     output: true
+permalink: /blog/:year/:month/:day/:title

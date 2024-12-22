@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: default
 title: Blog
 permalink: /blog
@@ -16,4 +16,4 @@ permalink: /blog
       </li>
     {% endfor %}
   </ul>
-{% endif %}
+{% endif %} -->

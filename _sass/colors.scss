@@ -40,7 +40,7 @@ a {
 }
 
 h1{
-    color: $yellow-100;
+    color: $yellow-300;
 }
 
 h2, h3, h4, h5, h6 {
@@ -160,5 +160,65 @@ footer {
                 color:  $yellow-100;
             }
         }
+    }
+}
+
+#project-page-main #back-button:hover, #blog-page-main #back-button:hover {
+    border-color: $white;
+}
+
+#project-page-main #back-button {
+    border: 2px solid $turquoise-300;
+
+    &:hover {
+        background-color: $turquoise-300;
+    }
+}
+
+#blog-page-main #back-button {
+    border: 2px solid $yellow-300;
+
+    &:hover {
+        background-color: $yellow-300;
+    }
+}
+
+#project-page-content-wrapper {
+    border: 2px solid $turquoise-300;
+    h1 {
+        background-color: $turquoise-300;
+        color: white;
+    }
+
+    h2 {
+        color: $turquoise-100;
+    }
+
+    a {
+        color: $turquoise-100;
+    }
+
+    a:hover {
+        color: $turquoise-300;
+    }
+}
+
+#blog-content-wrapper {
+    border: 2px solid $yellow-300;
+    h1 {
+        background-color: $yellow-300;
+        color: white;
+    }
+
+    h2 {
+        color: $yellow-100;
+    }
+
+    a {
+        color: $yellow-100;
+    }
+
+    a:hover {
+        color: $yellow-300;
     }
 }

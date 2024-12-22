@@ -54,7 +54,7 @@ footer {
     }
 }
 
-#about-me, #services, #index-heading, #contact-me {
+#about-me, #services, #index-heading, #contact-me, #project-page-content-wrapper, #project-page-main, #blog-page-main {
     max-width: 1000px;
     justify-self: center;
 }
@@ -98,6 +98,54 @@ footer {
     }
 }
 
+
+#portfolio-list-items {
+    padding: 12px;
+    list-style: none;
+
+    li .portfolio-item-link {
+        display: flex;
+        flex-direction: row;
+
+        img {
+            height: 150px;
+            width: 200px;
+            object-position: center;
+            object-fit: cover;
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            padding: 12px;
+            gap: 1rem;
+
+            h2, p {
+                padding: 0;
+            }
+        }
+    }
+}
+
+#back-button {
+    padding: 8px 16px;
+    align-self: flex-start;
+}
+
+#project-page-content-wrapper, #blog-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    h1, h2, p, ul {
+        padding: 8px 16px;
+    }
+
+    ul {
+        padding-left: 36px;
+    }
+}
+
+
 // media queries for mobile
 @media screen and (max-width: 600px) {
     #index-heading {
@@ -128,35 +176,21 @@ footer {
             }
         }
     }
-}
 
-#portfolio-list-items {
-    padding: 12px;
-    list-style: none;
-
-    li .portfolio-item-link {
-        display: flex;
-        flex-direction: row;
-        text-decoration: none;
-
-        img {
-            height: 150px;
-            width: 200px;
-            object-position: center;
-            object-fit: cover;
-        }
-
-        div {
-            display: flex;
+    #portfolio-list-items {
+        li .portfolio-item-link {
             flex-direction: column;
-            flex-grow: 1;
-            padding: 12px;
-            gap: 1rem;
 
-            h2, p {
-                padding: 0;
+            img {
+                width: 100%;
+                height: auto;
+            }
+
+            .github-repo-link-wrapper {
+                text-align: center;
             }
         }
     }
 }
+
 
