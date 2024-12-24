@@ -1,6 +1,7 @@
 ---
 layout: project-item
 title: "Truck Fleet Tracking  Message Producer using Java & Kafka"
+thumbnail: /assets/images/projects/project-fleet-tracking-system-java-kafka.png
 repository: https://github.com/TheAttentionSeeker5050/KafkaJavaTruckFleetTrackingSystem
 ---
 

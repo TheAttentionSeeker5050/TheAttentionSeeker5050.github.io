@@ -136,13 +136,25 @@ footer {
 #project-page-content-wrapper, #blog-content-wrapper {
     display: flex;
     flex-direction: column;
-    h1, h2, p, ul {
+    h1, h2, h3, p, ul {
         padding: 8px 16px;
     }
 
     ul {
         padding-left: 36px;
     }
+
+}
+
+#project-thumbnail img {
+    width: 100%;
+    object-fit: cover;
+    object-position:top;
+}
+
+#project-thumbnail {
+    align-self: stretch;
+    margin-bottom: 20px;
 }
 
 

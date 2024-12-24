@@ -3,6 +3,7 @@ layout: project-item
 title: "3News App Using Angular, LangChain and OpenAI"
 backendRepository: https://github.com/TheAttentionSeeker5050/3-news-backend-fastAPI-LangChain-LLM
 frontendRepository: https://github.com/TheAttentionSeeker5050/3-news-frontend-Angular
+thumbnail: /assets/images/projects/project-3-news-open-ai-python-angular.png
 ---
 
 <p id="heading-p">

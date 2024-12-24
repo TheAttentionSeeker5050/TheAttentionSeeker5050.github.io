@@ -1,6 +1,7 @@
 ---
 layout: project-item
 title: "Ad Board with Spring Boot and Angular"
+thumbnail: /assets/images/projects/project-ad-board-spring-boot-angular.png
 backendRepository: https://github.com/TheAttentionSeeker5050/ad-board-with-java-spring-boot
 frontendRepository: https://github.com/TheAttentionSeeker5050/kaijoo-ad-board-frontend-web-angular
 ---
