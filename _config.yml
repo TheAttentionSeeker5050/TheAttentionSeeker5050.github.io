@@ -8,3 +8,25 @@ collections:
     permalink: /:collection/:name
     output: true
 permalink: /blog/:year/:month/:day/:title
+# sass:
+#   sass_dir: _sass
+#   style: compressed
+# plugins:
+#   - jekyll-coffeescript
+# defaults:
+#   - scope:
+#       path: "assets/images"
+#     values:
+#       image: true
+#   - scope:
+#       path: "assets/js"
+#     values:
+#       js: true
+#   - scope:
+#       path: "assets/svg"
+#     values:
+#       svg: true
+#   - scope:
+#       path: "assets/css"
+#     values:
+#       css: true
