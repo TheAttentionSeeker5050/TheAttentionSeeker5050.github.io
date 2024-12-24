@@ -1,5 +1,5 @@
-domain: "nicolas-castellano.github.io"
-url: "nicolas-castellano.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+domain: "nicolas-castellano.com"
+url: "nicolas-castellano.com" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 title: "Nicolas Castellano Developer" # the name of your site, e.g. ACME Corp.
 markdown: kramdown
@@ -8,3 +8,12 @@ collections:
     permalink: /:collection/:name
     output: true
 permalink: /blog/:year/:month/:day/:title
+lsi: false
+safe: true
+incremental: false
+highlighter: rouge
+gist:
+  noscript: false
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
