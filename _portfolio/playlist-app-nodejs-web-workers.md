@@ -1,7 +1,7 @@
 ---
 layout: project-item
 title: "HTMX File Download and Playlist Site"
-thumbnail: /assets/images/projects/project-playlist-app-nodejs-web-workers.gif
+thumbnail: /assets/images/projects/project-video-playlist-download-app.gif
 repository: https://github.com/TheAttentionSeeker5050/nodejs-htmx-web-worker-example
 ---
 

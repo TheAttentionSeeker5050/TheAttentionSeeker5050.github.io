@@ -20,17 +20,20 @@
       
         {{ content }}
         
-        {% if page.repository %}
-        {% include project-repository-link.html url=page.repository label="GitHub Repository" %}
-        {% endif %}
-        
-        {% if page.frontendRepository %}
-        {% include project-repository-link.html url=page.frontendRepository label="GitHub Frontend Repository" %}
-        {% endif %}
-        
-        {% if page.backendRepository %}
-        {% include project-repository-link.html url=page.backendRepository label="GitHub Backend Repository" %}
-        {% endif %}
+        <div id="project-repository-links-section">
+
+          {% if page.repository %}
+          {% include project-repository-link.html url=page.repository label="GitHub Repository" %}
+          {% endif %}
+          
+          {% if page.frontendRepository %}
+          {% include project-repository-link.html url=page.frontendRepository label="GitHub Frontend Repository" %}
+          {% endif %}
+          
+          {% if page.backendRepository %}
+          {% include project-repository-link.html url=page.backendRepository label="GitHub Backend Repository" %}
+          {% endif %}
+        </div>
         
         <p>
           Dive in to explore my other projects projects, and don’t forget to check out my <a href="https://github.com/TheAttentionSeeker5050/" target="_blank">GitHub</a> account for additional insights into my development journey.
